@@ -3,7 +3,7 @@
 const cards = [
     {
         id: 0, 
-        img:'/public/images/logo-chrome.svg', 
+        img:'/images/logo-chrome.svg', 
         alt: 'Chrome',
         title: "Add to Chrome", 
         minVer: 62, 
@@ -12,7 +12,7 @@ const cards = [
     },
     {
         id: 1, 
-        img:'/public/images/logo-firefox.svg',  
+        img:'/images/logo-firefox.svg',  
         alt: 'Firefox',
         title: "Add to Firefox", 
         minVer: 55, 
@@ -21,7 +21,7 @@ const cards = [
     },
     {
         id: 2, 
-        img:'/public/images/logo-opera.svg',  
+        img:'/images/logo-opera.svg',  
         alt: 'Opera',
         title: "Add to Opera", 
         minVer: 46, 
