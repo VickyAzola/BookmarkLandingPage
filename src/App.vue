@@ -6,7 +6,7 @@ import CardWebSearcher from './components/CardWebSearcher.vue';
 import FeaturesCard from './components/FeaturesCard.vue';
 import AskedQuestions from './components/AskedQuestions.vue';
 import BaseButton from './components/BaseButton.vue';
-import HeroImg from '/public/images/illustration-hero.svg';
+import HeroImg from '/images/illustration-hero.svg';
 
 let email = ref('')
 let errorMsg = ref(false)
