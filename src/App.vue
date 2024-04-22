@@ -32,7 +32,7 @@ function submitForm() {
     <section class="mt-32 lg:mt-40 mb-36 lg:grid lg:grid-cols-2 lg:items-center">
       <div class="relative pt-14 mt-6 md:pt-28 lg:order-last">
         <div class="bg-PrimarySoftBlue h-56 w-[80%] md:h-[21rem] ml-auto rounded-r rounded-full"></div>
-        <img :src=HeroImg alt="" class="z-10 top-0 absolute mx-auto inset-x-0 lg:mr-8" />
+        <img :src=HeroImg alt="" class="z-10 max-h-[110%] lg:max-h-auto top-0 absolute mx-auto inset-x-0 lg:mr-8" />
       </div>
       <div>
         <div class="text-center lg:text-left mx-8 mt-10 mb-8 md:mx-24 lg:ml-28 md:mt-14 lg:mt-4">
