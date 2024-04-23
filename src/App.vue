@@ -28,7 +28,7 @@ function submitForm() {
   <header>
     <TheNavbar />
   </header>
-  <main>
+  <main class="xl:max-w-[91rem] xl:mx-auto">
     <section class="mt-32 lg:mt-40 mb-36 lg:grid lg:grid-cols-2 lg:items-center">
       <div class="relative pt-14 mt-6 md:pt-28 lg:order-last">
         <div class="bg-PrimarySoftBlue h-56 w-[80%] md:h-[21rem] ml-auto rounded-r rounded-full"></div>
