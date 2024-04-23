@@ -49,7 +49,7 @@ function menuOpen() {
                 <a :href="link.link" class="tracking-[.2rem] hover:text-PrimarySoftRed"> {{ link.name }} </a>
               </li>
               <li class="my-6 lg:my-0 lg:p-0 border-t lg:border-none">
-                <button class="tracking-[.2rem] py-3 mt-6 lg:m-0 lg:py-2 lg:px-6 border lg:border-GrayishBlue rounded border-white w-full hover:border-PrimarySoftRed hover:text-PrimarySoftRed">
+                <button class="tracking-[.2rem] py-3 mt-6 lg:m-0 lg:py-2 lg:px-6 border rounded border-white hover:border-PrimarySoftRed w-full lg:bg-PrimarySoftRed lg:text-white lg:border-PrimarySoftRed lg:hover:bg-white hover:text-PrimarySoftRed">
                   LOGIN
                 </button>
               </li>
