@@ -60,7 +60,7 @@ function submitForm() {
       <FeaturesCard />
     </section>
 
-    <section class="my-16 flex flex-col items-center text-center mx-8 md:mx-24 lg:mx-28 xl:mx-32">
+    <section class="mb-16 mt-20 flex flex-col items-center text-center mx-8 md:mx-24 lg:mx-28 xl:mx-32">
       <div class="mb-10 lg:max-w-[30rem]">
         <h4 class="text-2xl lg:text-3xl font-semibold mb-3">Download the extension</h4>
         <p class="text-GrayishBlue">
