@@ -35,14 +35,14 @@ function submitForm() {
         <img :src=HeroImg alt="" class="z-10 max-h-[110%] lg:max-h-auto top-0 absolute mx-auto inset-x-0 lg:mr-8" />
       </div>
       <div>
-        <div class="text-center lg:text-left mx-8 mt-10 mb-8 md:mx-24 lg:ml-28 md:mt-14 lg:mt-4">
-          <h1 class="text-3xl lg:text-[2.8rem] text-VeryDarkBlue font-semibold mb-3 lg:mb-6">A Simple Bookmark Manager</h1>
+        <div class="text-center lg:text-left mx-8 mt-10 mb-8 md:mx-24 lg:ml-28 xl:ml-32 md:mt-14 lg:mt-4">
+          <h1 class="text-3xl lg:text-[2.8rem] xl:text-[3.3rem] text-VeryDarkBlue font-semibold mb-3 lg:mb-6">A Simple Bookmark Manager</h1>
           <p class="text-GrayishBlue">
             A clean and simple interface to organize your favourite websites. Open a new 
             browser tab and see your sites load instantly. Try it for free.
           </p>
         </div>
-        <div class="flex gap-x-4 items-center justify-center lg:justify-start lg:pl-28">
+        <div class="flex gap-x-4 items-center justify-center lg:justify-start lg:pl-28 xl:pl-32">
           <BaseButton variant="blue" textButton="Get it on Chrome" />
           <BaseButton variant="white" textButton="Get it on Firefox" />
         </div>
@@ -50,9 +50,9 @@ function submitForm() {
     </section>
 
     <section class="md:mt-14 mt-12 mb-24 flex flex-col items-center text-center">
-      <div class="mx-8 mb-8 md:mx-24 lg:mx-28 lg:max-w-[30rem]">
-        <h2 class="text-2xl text-VeryDarkBlue font-semibold mb-3">Features</h2>
-        <p class="text-GrayishBlue">
+      <div class="mx-8 mb-10 md:mx-24 lg:mx-28 xl:mx-32 lg:max-w-[30rem]">
+        <h2 class="text-2xl lg:text-3xl text-VeryDarkBlue font-semibold mb-3">Features</h2>
+        <p class="text-GrayishBlue mb-2">
           Our aim is to make it quick and easy for you to access your favourite websites. 
           Your bookmarks sync between your devices so you can access them on the go.
         </p>
@@ -60,9 +60,9 @@ function submitForm() {
       <FeaturesCard />
     </section>
 
-    <section class="my-12 flex flex-col items-center text-center mx-8 md:mx-24 lg:mx-28">
-      <div class="mb-8 lg:max-w-[30rem]">
-        <h4 class="text-2xl font-semibold mb-3">Download the extension</h4>
+    <section class="my-16 flex flex-col items-center text-center mx-8 md:mx-24 lg:mx-28 xl:mx-32">
+      <div class="mb-10 lg:max-w-[30rem]">
+        <h4 class="text-2xl lg:text-3xl font-semibold mb-3">Download the extension</h4>
         <p class="text-GrayishBlue">
           We’ve got more browsers in the pipeline. Please do let us know if you’ve 
           got a favourite you’d like us to prioritize.
@@ -73,8 +73,8 @@ function submitForm() {
       </div>
     </section>
 
-    <section class="mt-20 mb-24 flex flex-col items-center text-center mx-8 md:mx-24 lg:max-w-[30rem] lg:mx-auto">
-      <h5 class="text-2xl font-semibold mb-3">Frequently Asked Questions</h5>
+    <section class="mt-24 mb-32 flex flex-col items-center text-center mx-8 md:mx-24 lg:max-w-[30rem] lg:mx-auto">
+      <h5 class="text-2xl lg:text-3xl font-semibold mb-3">Frequently Asked Questions</h5>
       <p class="text-GrayishBlue">
         Here are some of our FAQs. If you have any other questions you’d like 
         answered please feel free to email us.
