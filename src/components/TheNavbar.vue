@@ -21,7 +21,7 @@ function menuOpen() {
 </script>
 
 <template>
-    <header class="bg-white h-20 lg:h-24 fixed top-0 z-20 w-full lg:flex lg:justify-between lg:items-center lg:px-28">
+    <div class="bg-white h-20 lg:h-24 fixed top-0 z-20 w-full lg:flex lg:justify-between lg:items-center lg:px-28">
 
         <div class="py-7 px-8 lg:p-0">
             <a href="#" class="absolute z-20 top-0 left-0 pt-7 lg:pt-9 lg:pl-24" :class="[open ? 'pl-12' : '']">
@@ -75,5 +75,5 @@ function menuOpen() {
           </div>
         </nav>
 
-    </header>
+    </div>
 </template>
