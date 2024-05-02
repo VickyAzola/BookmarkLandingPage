@@ -46,7 +46,7 @@ import BaseButton from './BaseButton.vue';
         >
             <button 
                 @click="changeCard(index)"  
-                :class="[ selected == index ? 'border-b-4 border-b-PrimarySoftRed text-VeryDarkBlue' : 'text-gray-500 border-b-4 border-b-[#d1d1d2]' ]"
+                :class="[ selected == index ? 'border-b-4 border-b-PrimarySoftRed text-VeryDarkBlue' : 'text-gray-500 border-b-4 border-b-white' ]"
                 class="py-2 lg:pb-5 px-5 lg:px-7 hover:text-PrimarySoftRed transition-all" 
             >
                 {{ button.text }}
