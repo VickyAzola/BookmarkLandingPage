@@ -91,11 +91,8 @@ function submitForm() {
         <p class="uppercase tracking-[.25rem] text-sm">35,000+ already joined</p>
         <h6 class="font-semibold text-2xl lg:text-3xl mt-3 mb-6">Stay up-to-date with what we’re doing</h6>
         <form @submit.prevent="onSubmit" class="flex flex-col w-full lg:flex-row lg:gap-x-2 lg:items-start">
-          <div
-            class="relative mb-3 rounded-md lg:w-2/3" 
-            :class="[errorMsg ? 'border bg-PrimarySoftRed border-PrimarySoftRed': 'border-none']"
-          >
-            <label for="email">
+          <div class="relative mb-3" >
+            <label for="email" class="rounded-md lg:w-2/3" :class="[errorMsg ? 'border bg-PrimarySoftRed border-PrimarySoftRed': 'border-none']">
               <input 
                 id="email" 
                 type="email"
