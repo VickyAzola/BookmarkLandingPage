@@ -35,8 +35,8 @@ function submitForm() {
         <img :src=HeroImg alt="" class="z-10 max-h-[110%] lg:max-h-auto top-0 absolute mx-auto inset-x-0 lg:mr-8" />
       </div>
       <div>
-        <div class="text-center lg:text-left mx-8 mt-10 mb-8 md:mx-24 lg:ml-28 xl:ml-32 md:mt-14 lg:mt-4">
-          <h1 class="text-3xl lg:text-[2.8rem] xl:text-[3.3rem] text-VeryDarkBlue font-semibold mb-3 lg:mb-6">A Simple Bookmark Manager</h1>
+        <div class="text-center lg:text-left mx-8 mt-10 mb-8 md:mx-24 lg:mr-16 lg:ml-28 xl:ml-32 md:mt-14 lg:mt-4">
+          <h1 class="text-3xl lg:text-[2.8rem] xl:text-[3.3rem] leading-normal text-VeryDarkBlue font-semibold mb-3 lg:mb-6">A Simple Bookmark Manager</h1>
           <p class="text-GrayishBlue">
             A clean and simple interface to organize your favourite websites. Open a new 
             browser tab and see your sites load instantly. Try it for free.
