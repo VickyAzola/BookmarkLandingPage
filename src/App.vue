@@ -61,7 +61,7 @@ function submitForm() {
     </section>
 
     <section class="mb-16 mt-20 flex flex-col items-center text-center mx-8 md:mx-24 lg:mx-28 xl:mx-32">
-      <div class="mb-10 lg:max-w-[30rem]">
+      <div class="mb-14 lg:max-w-[30rem]">
         <h4 class="text-2xl lg:text-3xl font-semibold mb-3">Download the extension</h4>
         <p class="text-GrayishBlue">
           We’ve got more browsers in the pipeline. Please do let us know if you’ve 
