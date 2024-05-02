@@ -10,7 +10,7 @@ const NavLinks = [
 </script>
 
 <template>
-    <div class="bg-VeryDarkBlue lg:px-28">
+    <div class="bg-VeryDarkBlue lg:px-28 xl:px-32">
         <nav 
             id="footerNav" 
             aria-label="Footer Navigation" 
