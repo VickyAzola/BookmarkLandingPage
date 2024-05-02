@@ -73,7 +73,7 @@ function submitForm() {
       </div>
     </section>
 
-    <section class="mt-24 mb-32 flex flex-col items-center text-center mx-8 md:mx-24 lg:max-w-[30rem] lg:mx-auto">
+    <section class="mt-24 mb-32 flex flex-col items-center text-center mx-8 md:mx-24 lg:max-w-[35rem] lg:mx-auto">
       <h5 class="text-2xl lg:text-3xl font-semibold mb-3">Frequently Asked Questions</h5>
       <p class="text-GrayishBlue">
         Here are some of our FAQs. If you have any other questions you’d like 
