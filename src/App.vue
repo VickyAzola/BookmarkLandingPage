@@ -89,21 +89,23 @@ function submitForm() {
     <section class="bg-PrimarySoftBlue text-white px-8 md:px-24 py-12 text-center ">
       <div class="lg:max-w-[30rem] lg:mx-auto ">
         <p class="uppercase tracking-[.25rem] text-sm">35,000+ already joined</p>
-        <h6 class="font-semibold text-2xl mt-3 mb-6">Stay up-to-date with what we’re doing</h6>
+        <h6 class="font-semibold text-2xl lg:text-3xl mt-3 mb-6">Stay up-to-date with what we’re doing</h6>
         <form @submit.prevent="onSubmit" class="flex flex-col w-full lg:flex-row lg:gap-x-2 lg:items-start">
-          <label 
-            for="email" 
-            class="relative mb-3 rounded-md lg:w-2/3" 
-            :class="[errorMsg ? 'border bg-PrimarySoftRed border-PrimarySoftRed': 'border-none']"
-          >
-            <input 
-              id="email" 
-              type="email"
-              v-model="email"
-              placeholder="Enter your email adress"
-              class="w-full py-3 rounded-md px-4 text-sm placeholder-gray-400 text-gray-700" 
-              required
+          <div>
+            <label 
+              for="email" 
+              class="relative mb-3 rounded-md lg:w-2/3" 
+              :class="[errorMsg ? 'border bg-PrimarySoftRed border-PrimarySoftRed': 'border-none']"
+            >
+              <input 
+                id="email" 
+                type="email"
+                v-model="email"
+                placeholder="Enter your email adress"
+                class="w-full py-3 rounded-md px-4 text-sm placeholder-gray-400 text-gray-700" 
+                required
               />
+              </label>
               <svg
                 :class="[errorMsg ? 'block' : 'hidden']" 
                 class="absolute right-3 top-3"
@@ -121,7 +123,7 @@ function submitForm() {
               class="bg-PrimarySoftRed text-xs rounded-b-md italic text-left pl-2 py-1">
               Whoops, make sure it's an email
             </p>
-          </label>
+          </div>
           <BaseButton :handleClick="submitForm" variant="red" textButton="Contact Us" />
         </form>
       </div>
