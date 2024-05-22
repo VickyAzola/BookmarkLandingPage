@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from '@vue/reactivity'
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 import Hamburger from '/images/icon-hamburger.svg'
 import Close from '/images/icon-close.svg'
 import Logo from '/images/logo-bookmark.svg'
@@ -13,21 +13,35 @@ const NavLinks = [
 ]
 
 let open = ref(false)
+const scrolled = ref(false);
 
 function menuOpen() {
     open.value = !open.value
 }
 
+function handleScroll() {
+  scrolled.value = window.scrollY > 50;
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', handleScroll);
+});
+
 </script>
 
 <template>
-    <header class="bg-white">
+    <header class="h-20 lg:h-24 fixed top-0 z-20 w-full transition-all duration-500" 
+    :class="scrolled ? 'bg-white shadow-lg' : 'bg-transparent'">
 
-      <div class="pr-6 lg:pr-16 2xl:max-w-[88rem] mx-auto h-20 lg:h-24 fixed top-0 z-20 w-full inset-x-0 lg:flex lg:justify-between lg:items-center ">
-        <div class="py-7 px-8 lg:px-0">
+    <div class="pr-4 lg:px-16 2xl:max-w-[88rem] h-20 lg:h-24 mx-auto inset-x-0 lg:flex lg:justify-between lg:items-center">
+      <div class="py-7 px-8 lg:px-0">
           <a 
             href="#" 
-            class="absolute z-20 top-0 left-0 pt-7 lg:pt-9 pl-0 lg:pl-16" 
+            class="absolute z-20 top-0 left-0 pt-7 lg:relative" 
             :class="open ? 'pl-12' : ''"
           >
             <img 
@@ -48,7 +62,7 @@ function menuOpen() {
 
         <nav aria-label="Top Navigation" id="topNav">
           <div 
-            class="absolute flex flex-col justify-between top-0 z-10 lg:static bg-VeryDarkBlue/95 lg:bg-white 
+            class="absolute flex flex-col justify-between top-0 z-10 lg:static bg-VeryDarkBlue/95 lg:bg-transparent 
             min-h-screen w-full lg:min-h-min ease-in-out duration-700 lg:transition-none pt-28 px-8 pb-10 lg:p-0"
             :class="open ? 'left-0' : 'left-[100%]'">
             
@@ -84,7 +98,8 @@ function menuOpen() {
 
           </div>
         </nav>
-      </div>
+    </div>
+        
 
     </header>
 </template>
