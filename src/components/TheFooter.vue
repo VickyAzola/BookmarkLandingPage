@@ -10,11 +10,11 @@ const NavLinks = [
 </script>
 
 <template>
-    <div class="bg-VeryDarkBlue lg:px-28 xl:px-32">
+    <div class="bg-VeryDarkBlue lg:px-28">
         <nav 
             id="footerNav" 
             aria-label="Footer Navigation" 
-            class=" flex flex-col items-center text-center py-8 lg:py-2 px-6 lg:flex-row lg:justify-between">
+            class="max-w-[80rem] mx-auto flex flex-col items-center text-center py-8 lg:py-2 px-6 lg:flex-row lg:justify-between">
 
             <div class="lg:flex lg:items-center lg:gap-x-16">
                 <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">

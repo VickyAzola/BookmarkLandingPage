@@ -39,7 +39,7 @@ const dropdownData = [
         <div v-for="(data, index) in dropdownData">
             <button 
                 @click="dropdown(index)" 
-                class="w-full flex justify-between items-center text-left gap-x-3 py-4 lg:py-5 hover:text-PrimarySoftRed transition-all"
+                class="w-full flex justify-between items-center text-left gap-x-3 py-4 hover:text-PrimarySoftRed transition-all"
                 :class="[selected == index ? 'border-none' : 'border-b']"
                 >
                 {{ data.question }}

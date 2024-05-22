@@ -39,16 +39,16 @@ import BaseButton from './BaseButton.vue';
 
 <template>
     
-    <div class="px-8 md:px-24 lg:max-w-[58rem] mb-10 w-full md:flex">
+    <div class="px-8 md:px-24 lg:max-w-[55rem] mb-10 w-full md:flex">
         <div v-for="(button, index) in buttons"
             :key="button.id" 
-            class="border-y border-y-[#d1d1d2] md:border-t-white flex w-full items-center justify-center"
+            class="border-y md:border-t-white flex w-full items-center justify-center"
         >
             <button 
-                @click="changeCard(index)"  
-                :class="[ selected == index ? 'border-b-4 border-b-PrimarySoftRed text-VeryDarkBlue' : 'text-gray-500 border-b-4 border-b-white' ]"
-                class="py-2 lg:pb-5 px-5 lg:px-7 hover:text-PrimarySoftRed transition-all" 
-            >
+            @click="changeCard(index)"  
+            :class="[ selected == index ? 'border-b-4 border-b-PrimarySoftRed text-VeryDarkBlue' : 'text-gray-500' ]"
+            class="py-2 px-5 hover:text-PrimarySoftRed transition-all" 
+        >
                 {{ button.text }}
             </button>
         </div>
@@ -63,8 +63,8 @@ import BaseButton from './BaseButton.vue';
                 class="max-w-[90%] max-h-[100%] md:h-auto md:w-auto px-6 lg:px-0 z-10 top-0 absolute mx-auto left-0 right-0 lg:mx-0 lg:left-auto lg:right-0" 
             />
         </div>
-        <div class="px-8 pb-8 pt-10 lg:py-0 md:px-24 lg:pr-28 xl:pr-32 flex flex-col items-center text-center lg:text-left lg:items-start">
-            <h3 class="font-semibold text-2xl lg:text-3xl mb-3 lg:mb-5">{{ cards[selected].title }}</h3>
+        <div class="px-8 pb-8 pt-10 lg:py-0 md:px-24 lg:pr-28 flex flex-col items-center text-center lg:text-left lg:items-start">
+            <h3 class="font-semibold text-2xl mb-3 lg:mb-5">{{ cards[selected].title }}</h3>
             <p class=" text-GrayishBlue">{{ cards[selected].description }}</p>
             <div class="mt-7 hidden lg:block">
                 <BaseButton variant="blue" textButton="More Info" />
