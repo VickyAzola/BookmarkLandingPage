@@ -34,22 +34,18 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-    <header class="h-20 lg:h-24 fixed top-0 z-20 w-full transition-all duration-500" 
+    <header class="fixed top-0 z-20 w-full transition-all duration-500" 
     :class="scrolled ? 'bg-white shadow-lg' : 'bg-transparent'">
 
     <div class="pr-4 lg:px-16 2xl:max-w-[88rem] h-20 lg:h-24 mx-auto inset-x-0 lg:flex lg:justify-between lg:items-center">
-      <div class="py-7 px-8 lg:px-0">
+      <div class="px-8 lg:px-0">
           <a 
             href="#" 
-            class="absolute z-20 top-0 left-0 pt-7 lg:relative" 
-            :class="open ? 'pl-12' : ''"
+            class="absolute z-20 top-0 left-0 pt-7 pl-4 lg:relative lg:-top-3" 
           >
             <img 
               :src="open ? LogoWhite : Logo" 
-              alt="Bookmark logo" 
-              :class="open 
-                ? 'transition-all duration-1000 -translate-x-6' 
-                : 'transition-all duration-700 translate-x-6'" 
+              alt="Bookmark logo"
             />
           </a>
           <button @click="menuOpen()" class="absolute z-20 top-0 right-0 pt-8 pr-6 lg:hidden">
